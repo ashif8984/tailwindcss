@@ -1,0 +1,33 @@
+/* tailwindcss utility class*/
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.btn{
+    @apply py-2 px-4 font-semibold;
+}
+
+.btn-green{
+    @apply rounded-lg shadow-md text-white bg-green-500 hover:bg-blue-400;
+}
+
+
+@layer components{
+    .btn-download{
+        @apply bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center;
+
+    }
+}
+
+@layer utilities{
+    .w-30{
+        width: 30rem;
+    }
+
+    .mb-2 {
+        margin-bottom: 0.35rem;
+      }
+
+}
